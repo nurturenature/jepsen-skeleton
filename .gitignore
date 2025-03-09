@@ -1,3 +1,4 @@
+# GitHub setup
 pom.xml
 pom.xml.asc
 *.jar
@@ -12,3 +13,12 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+
+# common Clojure tools
+.calva/
+.clj-kondo/
+.lsp/
+.vscode/
+
+# Jepsen
+store/
