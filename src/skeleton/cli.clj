@@ -16,6 +16,7 @@
    that take CLI options and return workload maps."
   {:ops-by-node    workload/ops-by-node
    :odd-nodes-only workload/odd-nodes-only
+   :on-threads-any workload/on-threads-any
    :none           (fn [_] tests/noop-test)})
 
 (defn test-name

@@ -38,3 +38,13 @@
 
     (assoc ops-by-node
            :generator generator)))
+
+(defn on-threads-any
+  "An ops-by-node workload with an (gen/on-threads any?) generator."
+  [opts]
+  (let [ops-by-node (ops-by-node opts)
+        generator   (->> (:generator ops-by-node)
+                         (gen/on-threads any?))]
+
+    (assoc ops-by-node
+           :generator generator)))
